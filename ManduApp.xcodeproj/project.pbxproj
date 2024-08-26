@@ -46,6 +46,27 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A54134CD2C7C4FB400BA1D77 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A54134CE2C7C4FBB00BA1D77 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		A54134CF2C7C4FC500BA1D77 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
 		A5D6601D2C773A6D005DA48C = {
 			isa = PBXGroup;
 			children = (
@@ -65,10 +86,10 @@
 		A5D660282C773A6D005DA48C /* ManduApp */ = {
 			isa = PBXGroup;
 			children = (
-				A5D6604A2C7C142A005DA48C /* Resource */,
+				A54134CF2C7C4FC500BA1D77 /* Resource */,
+				A54134CE2C7C4FBB00BA1D77 /* Manager */,
+				A54134CD2C7C4FB400BA1D77 /* Model */,
 				A5D660492C7C141A005DA48C /* Extension */,
-				A5D660462C7C13ED005DA48C /* Manager */,
-				A5D6603D2C781957005DA48C /* Model */,
 				A5D660392C78169A005DA48C /* View */,
 				A5D660292C773A6D005DA48C /* ManduAppApp.swift */,
 				A5D6602B2C773A6D005DA48C /* ContentView.swift */,
@@ -107,33 +128,12 @@
 			path = CalenderView;
 			sourceTree = "<group>";
 		};
-		A5D6603D2C781957005DA48C /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		A5D660462C7C13ED005DA48C /* Manager */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Manager;
-			sourceTree = "<group>";
-		};
 		A5D660492C7C141A005DA48C /* Extension */ = {
 			isa = PBXGroup;
 			children = (
 				A5D660472C7C1414005DA48C /* ColorExtension.swift */,
 			);
 			path = Extension;
-			sourceTree = "<group>";
-		};
-		A5D6604A2C7C142A005DA48C /* Resource */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Resource;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -363,9 +363,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = GurolMangdu.ManduApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -392,9 +396,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = GurolMangdu.ManduApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
