@@ -13,6 +13,11 @@
 		A5D660312C773A6E005DA48C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A5D660302C773A6E005DA48C /* Preview Assets.xcassets */; };
 		A5D660382C781691005DA48C /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D660372C781691005DA48C /* CalendarView.swift */; };
 		A5D6603B2C7816C0005DA48C /* MDCalenderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D6603A2C7816C0005DA48C /* MDCalenderView.swift */; };
+		A5D6603F2C798F6B005DA48C /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D6603E2C798F6B005DA48C /* MainView.swift */; };
+		A5D660412C7C1398005DA48C /* BookmarkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D660402C7C1398005DA48C /* BookmarkView.swift */; };
+		A5D660432C7C13D2005DA48C /* MyPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D660422C7C13D2005DA48C /* MyPageView.swift */; };
+		A5D660452C7C13E0005DA48C /* SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D660442C7C13E0005DA48C /* SettingView.swift */; };
+		A5D660482C7C1414005DA48C /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D660472C7C1414005DA48C /* ColorExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +28,11 @@
 		A5D660302C773A6E005DA48C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A5D660372C781691005DA48C /* CalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
 		A5D6603A2C7816C0005DA48C /* MDCalenderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MDCalenderView.swift; sourceTree = "<group>"; };
+		A5D6603E2C798F6B005DA48C /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		A5D660402C7C1398005DA48C /* BookmarkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarkView.swift; sourceTree = "<group>"; };
+		A5D660422C7C13D2005DA48C /* MyPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageView.swift; sourceTree = "<group>"; };
+		A5D660442C7C13E0005DA48C /* SettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingView.swift; sourceTree = "<group>"; };
+		A5D660472C7C1414005DA48C /* ColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +65,10 @@
 		A5D660282C773A6D005DA48C /* ManduApp */ = {
 			isa = PBXGroup;
 			children = (
+				A5D6604A2C7C142A005DA48C /* Resource */,
+				A5D660492C7C141A005DA48C /* Extension */,
+				A5D660462C7C13ED005DA48C /* Manager */,
+				A5D6603D2C781957005DA48C /* Model */,
 				A5D660392C78169A005DA48C /* View */,
 				A5D660292C773A6D005DA48C /* ManduAppApp.swift */,
 				A5D6602B2C773A6D005DA48C /* ContentView.swift */,
@@ -76,6 +90,10 @@
 			isa = PBXGroup;
 			children = (
 				A5D6603C2C7816C6005DA48C /* CalenderView */,
+				A5D6603E2C798F6B005DA48C /* MainView.swift */,
+				A5D660402C7C1398005DA48C /* BookmarkView.swift */,
+				A5D660422C7C13D2005DA48C /* MyPageView.swift */,
+				A5D660442C7C13E0005DA48C /* SettingView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -87,6 +105,35 @@
 				A5D660372C781691005DA48C /* CalendarView.swift */,
 			);
 			path = CalenderView;
+			sourceTree = "<group>";
+		};
+		A5D6603D2C781957005DA48C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A5D660462C7C13ED005DA48C /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		A5D660492C7C141A005DA48C /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				A5D660472C7C1414005DA48C /* ColorExtension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		A5D6604A2C7C142A005DA48C /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resource;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -159,9 +206,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A5D660432C7C13D2005DA48C /* MyPageView.swift in Sources */,
+				A5D660412C7C1398005DA48C /* BookmarkView.swift in Sources */,
 				A5D6602C2C773A6D005DA48C /* ContentView.swift in Sources */,
+				A5D660482C7C1414005DA48C /* ColorExtension.swift in Sources */,
 				A5D6603B2C7816C0005DA48C /* MDCalenderView.swift in Sources */,
 				A5D6602A2C773A6D005DA48C /* ManduAppApp.swift in Sources */,
+				A5D660452C7C13E0005DA48C /* SettingView.swift in Sources */,
+				A5D6603F2C798F6B005DA48C /* MainView.swift in Sources */,
 				A5D660382C781691005DA48C /* CalendarView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
