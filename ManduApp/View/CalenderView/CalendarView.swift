@@ -12,6 +12,9 @@ struct CalenderView: View {
     @State var offset: CGSize = CGSize()
     @State var clickedDates: Set<Date> = []
     
+    @State private var showDateSelectionSheet = false
+    @State private var selectedDate: Date?
+    
     var body: some View {
         VStack {
             headerView
@@ -33,7 +36,35 @@ struct CalenderView: View {
                     self.offset = CGSize()
                 }
         )
+        .sheet(isPresented: $showDateSelectionSheet) {
+            DateSelectionSheet(selectedDate: $selectedDate, onDismiss: {
+                showDateSelectionSheet = false
+            })
+        }
     }
+    
+    struct DateSelectionSheet: View {
+        @Binding var selectedDate: Date?
+        var onDismiss: () -> Void
+
+        
+        var body: some View {
+            VStack {
+                Text("Selected Date: \(selectedDate?.formatted(date: .long, time: .omitted) ?? "None")")
+                    .font(.title)
+                    .padding()
+                
+                Spacer()
+                
+                Button("Close") {
+                    onDismiss()
+                }
+                .padding()
+            }
+            .padding()
+        }
+    }
+    
     
     // MARK: - 헤더 뷰
     private var headerView: some View {
@@ -112,6 +143,10 @@ struct CalenderView: View {
                                         .foregroundColor(clicked ? Color.blue3 : Color.clear)
                                     //                                    .scaleEffect(4)
                                 )
+                                .onTapGesture {
+                                    showDateSelectionSheet = true
+                                    selectedDate = date
+                                }
                         }
                     }
                 }
