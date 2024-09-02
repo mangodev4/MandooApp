@@ -58,12 +58,15 @@ struct CalenderView: View {
                     .padding()
                 HStack {
                     Text("상호명")
-                        .font(.pretendMedium18)
+                        .font(.pretendMedium16)
                     Spacer()
-                    TextField("상호명을 입력하세요", text: $storeName)
-                        .textFieldStyle(.roundedBorder)
-                        .frame(width: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/)
+                    TextField("가게 이름", text: $storeName)
+                        .textFieldStyle(CommonTextfieldStyle())
+                        .frame(width: 200)
                 }
+                .padding(10)
+                
+                Divider()
                 
                 DatePicker(
                     "날짜",
@@ -72,7 +75,8 @@ struct CalenderView: View {
                                         set: { pickedDate = $0 }
                                     ),
                     displayedComponents: .date)
-                    .padding()
+                    .font(.pretendMedium16)
+                    .padding(10)
                     .datePickerStyle(.automatic)
                 Divider()
 
