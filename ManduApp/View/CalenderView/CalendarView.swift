@@ -22,6 +22,7 @@ struct CalenderView: View {
                 .zIndex(1)
             calendarGridView
         }
+        .padding(.horizontal, 10)
         .gesture(
             DragGesture()
                 .onChanged { gesture in
@@ -45,15 +46,26 @@ struct CalenderView: View {
     
     struct DateSelectionSheet: View {
         @Binding var selectedDate: Date?
+        @State private var pickedDate: Date?
         var onDismiss: () -> Void
 
         
         var body: some View {
             VStack {
-                Text("Selected Date: \(selectedDate?.formatted(date: .long, time: .omitted) ?? "None")")
-                    .font(.title)
+                Text("만두 일지")
+                    .font(.pretendBold24)
                     .padding()
-                
+                DatePicker(
+                    "날짜",
+                    selection: Binding(
+                                        get: { selectedDate ?? Date() },
+                                        set: { pickedDate = $0 }
+                                    ),
+                    displayedComponents: .date)
+                    .padding()
+                    .datePickerStyle(.automatic)
+                Divider()
+
                 Spacer()
                 
                 Button("Close") {
