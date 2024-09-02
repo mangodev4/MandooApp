@@ -46,6 +46,7 @@ struct CalenderView: View {
     
     struct DateSelectionSheet: View {
         @Binding var selectedDate: Date?
+        @State private var storeName: String = ""
         @State private var pickedDate: Date?
         var onDismiss: () -> Void
 
@@ -55,6 +56,15 @@ struct CalenderView: View {
                 Text("만두 일지")
                     .font(.pretendBold24)
                     .padding()
+                HStack {
+                    Text("상호명")
+                        .font(.pretendMedium18)
+                    Spacer()
+                    TextField("상호명을 입력하세요", text: $storeName)
+                        .textFieldStyle(.roundedBorder)
+                        .frame(width: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/)
+                }
+                
                 DatePicker(
                     "날짜",
                     selection: Binding(
