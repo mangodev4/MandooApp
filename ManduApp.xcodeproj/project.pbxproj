@@ -9,6 +9,13 @@
 /* Begin PBXBuildFile section */
 		A5A6D0202C7C73EF001EA378 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A6D01F2C7C73EF001EA378 /* MainView.swift */; };
 		A5A6D0232C7C748B001EA378 /* mandoo.png in Resources */ = {isa = PBXBuildFile; fileRef = A5A6D0222C7C748B001EA378 /* mandoo.png */; };
+		A5A6D0832C857D96001EA378 /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A6D0822C857D96001EA378 /* DateExtension.swift */; };
+		A5A6D0852C857F0A001EA378 /* HapticManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A6D0842C857F0A001EA378 /* HapticManager.swift */; };
+		A5A6D08B2C85818A001EA378 /* Pretendard-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = A5A6D0872C85818A001EA378 /* Pretendard-Medium.otf */; };
+		A5A6D08C2C85818A001EA378 /* Pretendard-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = A5A6D0882C85818A001EA378 /* Pretendard-Regular.otf */; };
+		A5A6D08D2C85818A001EA378 /* Pretendard-SemiBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = A5A6D0892C85818A001EA378 /* Pretendard-SemiBold.otf */; };
+		A5A6D08E2C85818A001EA378 /* Pretendard-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = A5A6D08A2C85818A001EA378 /* Pretendard-Bold.otf */; };
+		A5A6D0912C858281001EA378 /* FontExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A6D0902C858281001EA378 /* FontExtension.swift */; };
 		A5D6602A2C773A6D005DA48C /* ManduAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D660292C773A6D005DA48C /* ManduAppApp.swift */; };
 		A5D6602C2C773A6D005DA48C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D6602B2C773A6D005DA48C /* ContentView.swift */; };
 		A5D6602E2C773A6E005DA48C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A5D6602D2C773A6E005DA48C /* Assets.xcassets */; };
@@ -24,6 +31,14 @@
 /* Begin PBXFileReference section */
 		A5A6D01F2C7C73EF001EA378 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		A5A6D0222C7C748B001EA378 /* mandoo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mandoo.png; sourceTree = "<group>"; };
+		A5A6D0822C857D96001EA378 /* DateExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtension.swift; sourceTree = "<group>"; };
+		A5A6D0842C857F0A001EA378 /* HapticManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticManager.swift; sourceTree = "<group>"; };
+		A5A6D0872C85818A001EA378 /* Pretendard-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Medium.otf"; sourceTree = "<group>"; };
+		A5A6D0882C85818A001EA378 /* Pretendard-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Regular.otf"; sourceTree = "<group>"; };
+		A5A6D0892C85818A001EA378 /* Pretendard-SemiBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-SemiBold.otf"; sourceTree = "<group>"; };
+		A5A6D08A2C85818A001EA378 /* Pretendard-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Bold.otf"; sourceTree = "<group>"; };
+		A5A6D08F2C858203001EA378 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		A5A6D0902C858281001EA378 /* FontExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontExtension.swift; sourceTree = "<group>"; };
 		A5D660262C773A6D005DA48C /* ManduApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ManduApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5D660292C773A6D005DA48C /* ManduAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManduAppApp.swift; sourceTree = "<group>"; };
 		A5D6602B2C773A6D005DA48C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -58,6 +73,7 @@
 		A54134CE2C7C4FBB00BA1D77 /* Manager */ = {
 			isa = PBXGroup;
 			children = (
+				A5A6D0842C857F0A001EA378 /* HapticManager.swift */,
 			);
 			path = Manager;
 			sourceTree = "<group>";
@@ -65,6 +81,7 @@
 		A54134CF2C7C4FC500BA1D77 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				A5A6D0862C858126001EA378 /* Font */,
 			);
 			path = Resource;
 			sourceTree = "<group>";
@@ -75,6 +92,17 @@
 				A5A6D0222C7C748B001EA378 /* mandoo.png */,
 			);
 			path = Assets;
+			sourceTree = "<group>";
+		};
+		A5A6D0862C858126001EA378 /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				A5A6D08A2C85818A001EA378 /* Pretendard-Bold.otf */,
+				A5A6D0872C85818A001EA378 /* Pretendard-Medium.otf */,
+				A5A6D0882C85818A001EA378 /* Pretendard-Regular.otf */,
+				A5A6D0892C85818A001EA378 /* Pretendard-SemiBold.otf */,
+			);
+			path = Font;
 			sourceTree = "<group>";
 		};
 		A5D6601D2C773A6D005DA48C = {
@@ -96,6 +124,7 @@
 		A5D660282C773A6D005DA48C /* ManduApp */ = {
 			isa = PBXGroup;
 			children = (
+				A5A6D08F2C858203001EA378 /* Info.plist */,
 				A5A6D0212C7C7465001EA378 /* Assets */,
 				A54134CF2C7C4FC500BA1D77 /* Resource */,
 				A54134CE2C7C4FBB00BA1D77 /* Manager */,
@@ -143,6 +172,8 @@
 			isa = PBXGroup;
 			children = (
 				A5D660472C7C1414005DA48C /* ColorExtension.swift */,
+				A5A6D0822C857D96001EA378 /* DateExtension.swift */,
+				A5A6D0902C858281001EA378 /* FontExtension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -207,7 +238,11 @@
 			files = (
 				A5A6D0232C7C748B001EA378 /* mandoo.png in Resources */,
 				A5D660312C773A6E005DA48C /* Preview Assets.xcassets in Resources */,
+				A5A6D08E2C85818A001EA378 /* Pretendard-Bold.otf in Resources */,
+				A5A6D08C2C85818A001EA378 /* Pretendard-Regular.otf in Resources */,
+				A5A6D08D2C85818A001EA378 /* Pretendard-SemiBold.otf in Resources */,
 				A5D6602E2C773A6E005DA48C /* Assets.xcassets in Resources */,
+				A5A6D08B2C85818A001EA378 /* Pretendard-Medium.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -219,12 +254,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				A5D660432C7C13D2005DA48C /* MyPageView.swift in Sources */,
+				A5A6D0832C857D96001EA378 /* DateExtension.swift in Sources */,
 				A5A6D0202C7C73EF001EA378 /* MainView.swift in Sources */,
 				A5D660412C7C1398005DA48C /* BookmarkView.swift in Sources */,
 				A5D6602C2C773A6D005DA48C /* ContentView.swift in Sources */,
 				A5D660482C7C1414005DA48C /* ColorExtension.swift in Sources */,
+				A5A6D0912C858281001EA378 /* FontExtension.swift in Sources */,
 				A5D6603B2C7816C0005DA48C /* MDCalenderView.swift in Sources */,
 				A5D6602A2C773A6D005DA48C /* ManduAppApp.swift in Sources */,
+				A5A6D0852C857F0A001EA378 /* HapticManager.swift in Sources */,
 				A5D660452C7C13E0005DA48C /* SettingView.swift in Sources */,
 				A5D660382C781691005DA48C /* CalendarView.swift in Sources */,
 			);
@@ -363,6 +401,7 @@
 				DEVELOPMENT_TEAM = HH4G2BS7C9;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ManduApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -396,6 +435,7 @@
 				DEVELOPMENT_TEAM = HH4G2BS7C9;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ManduApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

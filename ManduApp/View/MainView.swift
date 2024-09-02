@@ -20,14 +20,14 @@ struct MainView: View {
             VStack {
                 HStack {
                     Text("안녕하세요, 만찐두빵 님")
-                        .font(.title2)
+                        .font(.pretendBold20)
                     Spacer()
                 }
                 .padding(.leading, 30)
 
                     HStack {
                         Text("오늘 만두 어떠세요?")
-                            .font(.title2)
+                            .font(.pretendBold18)
 
                         
                         Spacer()
@@ -48,25 +48,25 @@ struct MainView: View {
                     .frame(width: radius * 2, height: radius * 2)
                 
                 ForEach(0..<numberOfCircles, id: \.self) { index in
-                    Button(action: {
-                        // 여기에 각 버튼의 액션을 추가하세요
-                        print("Button \(index) tapped")
-                    }) {
-                        Circle()
-                            .fill(Color.clear)
-                            .frame(width: smallCircleRadius * 2, height: smallCircleRadius * 2)
-                            .overlay(
+                    Circle()
+                        .fill(Color.clear)
+                        .frame(width: smallCircleRadius * 2, height: smallCircleRadius * 2)
+                        .overlay(
+                            Button(action: {
+                                // 여기에 각 버튼의 액션을 추가하세요
+                                print("Button \(index) tapped")
+                            }){
                                 Image("mandoo")
                                     .resizable()
                                     .scaledToFit()
-                            )
+                            }
+                        )
+                
                             .offset(x: (radius - innerOffset) * cos(angle(for: index)),
                                     y: (radius - innerOffset) * sin(angle(for: index)))
                     }
-                    
-                    
                 }
-            }
+            
             
             Text("만두 6판 째")
                 .font(.title)
