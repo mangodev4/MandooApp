@@ -10,6 +10,7 @@ import Combine
 
 class CalendarViewModel: ObservableObject {
     @Published var month: Date
+    @Published var clickedDates: Set<Date> = []
     
     init(month: Date) {
         self.month = month

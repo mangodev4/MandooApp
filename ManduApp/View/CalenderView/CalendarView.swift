@@ -11,7 +11,7 @@ struct CalenderView: View {
     @ObservedObject var viewModel: CalendarViewModel
 //    @State var month: Date
     @State var offset: CGSize = CGSize()
-    @State var clickedDates: Set<Date> = []
+//    @State var clickedDates: Set<Date> = []
     
     @State private var showDateSelectionSheet = false
     @State private var selectedDate: Date?
@@ -178,7 +178,7 @@ struct CalenderView: View {
                     } else {
                         let date = viewModel.getDate(for: index - firstWeekday)
                         let day = index - firstWeekday + 1
-                        let clicked = clickedDates.contains(date)
+                        let clicked = viewModel.clickedDates.contains(date)
                         let isToday = Calendar.current.isDate(date, inSameDayAs: today)
                         
                         
