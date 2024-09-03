@@ -12,9 +12,9 @@ struct OnboardingButtonStyle: ButtonStyle {
     func makeBody(configuration: Configuration) -> some View {
         ZStack {
             Rectangle()
-                .frame(height: 25)
-                .cornerRadius(4)
-                .foregroundColor(Color.blue1)
+                .frame(height: 35)
+                .cornerRadius(12)
+                .foregroundColor(Color.blue)
             
             configuration.label
                 .font(.pretendMedium16)

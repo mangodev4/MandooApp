@@ -110,10 +110,11 @@ struct CalenderView: View {
 
                 Spacer()
                 
-//                Button("Close") {
-//                    onDismiss()
-//                }
-//                .padding()
+                Button("저장하기") {
+                    onDismiss()
+                }
+                .buttonStyle(OnboardingButtonStyle())
+                .padding()
             }
             .padding()
         }
