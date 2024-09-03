@@ -42,6 +42,7 @@ struct CalenderView: View {
             DateSelectionSheet(selectedDate: $selectedDate, onDismiss: {
                 showDateSelectionSheet = false
             })
+            .presentationDragIndicator(.visible)
         }
     }
     
