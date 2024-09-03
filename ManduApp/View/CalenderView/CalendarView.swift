@@ -55,9 +55,22 @@ struct CalenderView: View {
         
         var body: some View {
             VStack {
+                HStack {
+                    Spacer()
+                    
+                    Button(action: 
+                            onDismiss,
+                           label: {
+                        Image(systemName: "xmark")
+                            .foregroundColor(.black)
+                            .frame(width: 30, height: 30)
+                    })
+                }
+                
                 Text("만두 일지")
                     .font(.pretendBold24)
                     .padding()
+                
                 HStack {
                     Text("상호명")
                         .font(.pretendMedium16)
@@ -82,17 +95,23 @@ struct CalenderView: View {
                     .datePickerStyle(.automatic)
                 Divider()
                 
-                Toggle(isOn: $isOn){
-                Label("군만두", systemImage: "checkmark")
+                HStack(spacing: 0) {
+                    Text("추천 메뉴")
+                        .font(.pretendMedium16)
+                        .padding(.leading, 10)
+                    
+                    Spacer()
+
+                    ToggleButtonView()
                 }
-                .toggleStyle(.button)
+                Divider()
 
                 Spacer()
                 
-                Button("Close") {
-                    onDismiss()
-                }
-                .padding()
+//                Button("Close") {
+//                    onDismiss()
+//                }
+//                .padding()
             }
             .padding()
         }
