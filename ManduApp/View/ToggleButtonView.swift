@@ -33,7 +33,7 @@ struct ToggleButtonView: View {
 //                        .frame(maxWidth: .infinity)
                         .background(
                             Capsule()
-                                .stroke(Color.blue, lineWidth: 2)
+                                .stroke(Color.gray4, lineWidth: 2)
                                 .fill(selectedIndex == index ? Color.blue : Color.white)
                         )
 
