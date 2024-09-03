@@ -14,7 +14,7 @@ struct CalenderView: View {
     
     @State private var showDateSelectionSheet = false
     @State private var selectedDate: Date?
-    
+
     var body: some View {
         VStack {
             headerView
@@ -44,10 +44,12 @@ struct CalenderView: View {
         }
     }
     
+    // MARK: - Sheet 뷰
     struct DateSelectionSheet: View {
         @Binding var selectedDate: Date?
         @State private var storeName: String = ""
         @State private var pickedDate: Date?
+        @State private var isOn = false
         var onDismiss: () -> Void
 
         
@@ -79,6 +81,11 @@ struct CalenderView: View {
                     .padding(10)
                     .datePickerStyle(.automatic)
                 Divider()
+                
+                Toggle(isOn: $isOn){
+                Label("군만두", systemImage: "checkmark")
+                }
+                .toggleStyle(.button)
 
                 Spacer()
                 
@@ -163,12 +170,12 @@ struct CalenderView: View {
                             }
                             
                             CellView(day: day, clicked: clicked)
-                                .background(
-                                    Circle()
-                                        .frame(width: 36, height: 36)
-                                        .foregroundColor(clicked ? Color.blue3 : Color.clear)
-                                    //                                    .scaleEffect(4)
-                                )
+                                .frame(width: 45, height: 60)
+//                                .background(
+//                                    Rectangle()
+//                                        .foregroundColor(Color.clear)
+//                                    //                                    .scaleEffect(4)
+//                                )
                                 .onTapGesture {
                                     showDateSelectionSheet = true
                                     selectedDate = date

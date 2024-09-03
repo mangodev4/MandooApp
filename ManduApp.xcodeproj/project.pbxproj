@@ -18,6 +18,7 @@
 		A5A6D0912C858281001EA378 /* FontExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A6D0902C858281001EA378 /* FontExtension.swift */; };
 		A5D215152C858DF5009E1766 /* DateSelectionSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D215142C858DF5009E1766 /* DateSelectionSheet.swift */; };
 		A5D215172C85AB5A009E1766 /* TextfieldStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D215162C85AB5A009E1766 /* TextfieldStyle.swift */; };
+		A5D215192C85B784009E1766 /* TagButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D215182C85B784009E1766 /* TagButtonStyle.swift */; };
 		A5D6602A2C773A6D005DA48C /* ManduAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D660292C773A6D005DA48C /* ManduAppApp.swift */; };
 		A5D6602C2C773A6D005DA48C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D6602B2C773A6D005DA48C /* ContentView.swift */; };
 		A5D6602E2C773A6E005DA48C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A5D6602D2C773A6E005DA48C /* Assets.xcassets */; };
@@ -42,6 +43,7 @@
 		A5A6D0902C858281001EA378 /* FontExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontExtension.swift; sourceTree = "<group>"; };
 		A5D215142C858DF5009E1766 /* DateSelectionSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateSelectionSheet.swift; sourceTree = "<group>"; };
 		A5D215162C85AB5A009E1766 /* TextfieldStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextfieldStyle.swift; sourceTree = "<group>"; };
+		A5D215182C85B784009E1766 /* TagButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagButtonStyle.swift; sourceTree = "<group>"; };
 		A5D660262C773A6D005DA48C /* ManduApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ManduApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5D660292C773A6D005DA48C /* ManduAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManduAppApp.swift; sourceTree = "<group>"; };
 		A5D6602B2C773A6D005DA48C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -158,6 +160,7 @@
 				A5A6D01F2C7C73EF001EA378 /* MainView.swift */,
 				A5D215142C858DF5009E1766 /* DateSelectionSheet.swift */,
 				A5D215162C85AB5A009E1766 /* TextfieldStyle.swift */,
+				A5D215182C85B784009E1766 /* TagButtonStyle.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -268,6 +271,7 @@
 				A5D215152C858DF5009E1766 /* DateSelectionSheet.swift in Sources */,
 				A5A6D0852C857F0A001EA378 /* HapticManager.swift in Sources */,
 				A5D660452C7C13E0005DA48C /* SettingView.swift in Sources */,
+				A5D215192C85B784009E1766 /* TagButtonStyle.swift in Sources */,
 				A5D660382C781691005DA48C /* CalendarView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
