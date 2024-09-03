@@ -16,7 +16,7 @@ struct ToggleButtonView: View {
         let columns = [GridItem(.flexible()), GridItem(.flexible()), GridItem(.flexible())]
 
         
-        LazyVGrid(columns: columns, spacing: 5) {
+        LazyVGrid(columns: columns,alignment: .leading, spacing: 10) {
             ForEach(0..<buttons.count, id: \.self) { index in
                 Button (action: {
                     if selectedIndex == index {
@@ -29,10 +29,10 @@ struct ToggleButtonView: View {
                         .font(.pretendBold14)
                         .foregroundColor(selectedIndex == index ? Color.white: Color.black )
                         .padding(.horizontal, 12)
-                        .padding(.vertical, 8)
+                        .padding(.vertical, 5)
 //                        .frame(maxWidth: .infinity)
                         .background(
-                            RoundedRectangle(cornerRadius: 14)
+                            Capsule()
                                 .stroke(Color.blue, lineWidth: 2)
                                 .fill(selectedIndex == index ? Color.blue : Color.white)
                         )
