@@ -30,7 +30,7 @@ class CalendarViewModel: ObservableObject {
     }
 
     /// 특정 해당 날짜
-    private func getDate(for day: Int) -> Date {
+    func getDate(for day: Int) -> Date {
       return Calendar.current.date(byAdding: .day, value: day, to: startOfMonth())!
     }
 
@@ -49,7 +49,8 @@ class CalendarViewModel: ObservableObject {
 }
 
 struct CalenderView: View {
-    @State var month: Date
+    @ObservedObject var viewModel: CalendarViewModel
+//    @State var month: Date
     @State var offset: CGSize = CGSize()
     @State var clickedDates: Set<Date> = []
     
@@ -71,9 +72,9 @@ struct CalenderView: View {
                 }
                 .onEnded { gesture in
                     if gesture.translation.width < -100 {
-                        changeMonth(by: 1)
+                        viewModel.changeMonth(by: 1)
                     } else if gesture.translation.width > 100 {
-                        changeMonth(by: -1)
+                        viewModel.changeMonth(by: -1)
                     }
                     self.offset = CGSize()
                 }
@@ -165,7 +166,7 @@ struct CalenderView: View {
             HStack {
                 Button(action: {
                     HapticManager.shared.mediumHaptic()
-                    changeMonth(by: -1)
+                    viewModel.changeMonth(by: -1)
                 }) {
                     Image(systemName: "chevron.left")
                         .foregroundColor(.blue3)
@@ -173,13 +174,13 @@ struct CalenderView: View {
                         .padding(.trailing, 20)
                         .padding(.bottom, 10)
                 }
-                Text(month, formatter: Self.dateFormatter)
+                Text(viewModel.month, formatter: Self.dateFormatter)
                     .frame(width: 220)
                     .font(.pretendSemiBold28)
                     .padding(.bottom)
                 Button(action: {
                     HapticManager.shared.mediumHaptic()
-                    changeMonth(by: 1)
+                    viewModel.changeMonth(by: 1)
                 }) {
                     Image(systemName: "chevron.right")
                         .foregroundColor(.blue3)
@@ -204,8 +205,8 @@ struct CalenderView: View {
     
     // MARK: - 날짜 그리드 뷰
     private var calendarGridView: some View {
-        let daysInMonth: Int = numberOfDays(in: month)
-        let firstWeekday: Int = firstWeekdayOfMonth(in: month) - 1
+        let daysInMonth: Int = viewModel.numberOfDays(in: viewModel.month)
+        let firstWeekday: Int = viewModel.firstWeekdayOfMonth(in: viewModel.month) - 1
         let today = Calendar.current.startOfDay(for: Date())
         
         
@@ -216,7 +217,7 @@ struct CalenderView: View {
                         RoundedRectangle(cornerRadius: 5)
                             .foregroundColor(Color.clear)
                     } else {
-                        let date = getDate(for: index - firstWeekday)
+                        let date = viewModel.getDate(for: index - firstWeekday)
                         let day = index - firstWeekday + 1
                         let clicked = clickedDates.contains(date)
                         let isToday = Calendar.current.isDate(date, inSameDayAs: today)
