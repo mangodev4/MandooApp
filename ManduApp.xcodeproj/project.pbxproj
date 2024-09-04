@@ -90,6 +90,7 @@
 		A54134CF2C7C4FC500BA1D77 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				A5A6D0212C7C7465001EA378 /* Assets */,
 				A5A6D0862C858126001EA378 /* Font */,
 			);
 			path = Resource;
@@ -114,6 +115,15 @@
 			path = Font;
 			sourceTree = "<group>";
 		};
+		A5D2151E2C875404009E1766 /* MDLogView */ = {
+			isa = PBXGroup;
+			children = (
+				A5D215142C858DF5009E1766 /* DateSelectionSheet.swift */,
+				A5D2151A2C86A75A009E1766 /* ToggleButtonView.swift */,
+			);
+			path = MDLogView;
+			sourceTree = "<group>";
+		};
 		A5D6601D2C773A6D005DA48C = {
 			isa = PBXGroup;
 			children = (
@@ -134,7 +144,6 @@
 			isa = PBXGroup;
 			children = (
 				A5A6D08F2C858203001EA378 /* Info.plist */,
-				A5A6D0212C7C7465001EA378 /* Assets */,
 				A54134CF2C7C4FC500BA1D77 /* Resource */,
 				A54134CE2C7C4FBB00BA1D77 /* Manager */,
 				A54134CD2C7C4FB400BA1D77 /* Model */,
@@ -159,25 +168,24 @@
 		A5D660392C78169A005DA48C /* View */ = {
 			isa = PBXGroup;
 			children = (
-				A5D6603C2C7816C6005DA48C /* CalenderView */,
+				A5D2151E2C875404009E1766 /* MDLogView */,
+				A5D6603C2C7816C6005DA48C /* MDCalenderView */,
 				A5D660422C7C13D2005DA48C /* MyPageView.swift */,
 				A5D660442C7C13E0005DA48C /* SettingView.swift */,
 				A5A6D01F2C7C73EF001EA378 /* MainView.swift */,
-				A5D215142C858DF5009E1766 /* DateSelectionSheet.swift */,
 				A5D215162C85AB5A009E1766 /* TextfieldStyle.swift */,
 				A5D215182C85B784009E1766 /* TagButtonStyle.swift */,
-				A5D2151A2C86A75A009E1766 /* ToggleButtonView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
 		};
-		A5D6603C2C7816C6005DA48C /* CalenderView */ = {
+		A5D6603C2C7816C6005DA48C /* MDCalenderView */ = {
 			isa = PBXGroup;
 			children = (
 				A5D6603A2C7816C0005DA48C /* MDCalenderView.swift */,
 				A5D660372C781691005DA48C /* CalendarView.swift */,
 			);
-			path = CalenderView;
+			path = MDCalenderView;
 			sourceTree = "<group>";
 		};
 		A5D660492C7C141A005DA48C /* Extension */ = {

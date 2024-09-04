@@ -72,7 +72,12 @@ struct DateSelectionSheet: View {
             Spacer()
             
             Button("저장하기") {
+                if let pickedDate = pickedDate {
+                    selectedDate = pickedDate
+                }
+//                onSave()
                 onDismiss()
+                
             }
             .buttonStyle(OnboardingButtonStyle())
             .padding()

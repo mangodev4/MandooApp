@@ -15,6 +15,8 @@ struct CalenderView: View {
     
     @State private var showDateSelectionSheet = false
     @State private var selectedDate: Date?
+    @State private var dateWithIcon: Date?
+    @State private var pickedDate: Date?
 
     var body: some View {
         VStack {
@@ -40,6 +42,9 @@ struct CalenderView: View {
         )
         .sheet(isPresented: $showDateSelectionSheet) {
             DateSelectionSheet(selectedDate: $selectedDate, onDismiss: {
+                if let selectedDate = selectedDate {
+                    dateWithIcon = selectedDate
+                }
                 showDateSelectionSheet = false
             })
             .presentationDragIndicator(.visible)
@@ -109,6 +114,8 @@ struct CalenderView: View {
                         let day = index - firstWeekday + 1
                         let clicked = viewModel.clickedDates.contains(date)
                         let isToday = Calendar.current.isDate(date, inSameDayAs: today)
+                        let isDateWithIcon = dateWithIcon != nil && Calendar.current.isDate(date, inSameDayAs: dateWithIcon!)  
+
                         
                         
                         ZStack {
@@ -123,12 +130,18 @@ struct CalenderView: View {
 //                                .background(
 //                                    Rectangle()
 //                                        .foregroundColor(Color.clear)
-//                                    //                                    .scaleEffect(4)
+//                                        .scaleEffect(4)
 //                                )
                                 .onTapGesture {
                                     showDateSelectionSheet = true
                                     selectedDate = date
                                 }
+                            if isDateWithIcon {
+                                Text("🥟")
+                                    .font(.largeTitle)
+                                    .offset(y: -30)
+                            }
+
                         }
                     }
                 }
@@ -158,11 +171,11 @@ struct CalenderView: View {
                     .foregroundColor(.black)
                     .font(.pretendMedium20)
                 
-                      if clicked {
-                        Text("Click")
-                          .font(.caption)
-                          .foregroundColor(.red)
-                      }
+//                      if clicked {
+//                        Text("Click")
+//                          .font(.caption)
+//                          .foregroundColor(.red)
+//                      }
             }
         }
     }
