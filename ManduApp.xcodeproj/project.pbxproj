@@ -7,20 +7,47 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A5A6D0202C7C73EF001EA378 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A6D01F2C7C73EF001EA378 /* MainView.swift */; };
+		A5A6D0232C7C748B001EA378 /* mandoo.png in Resources */ = {isa = PBXBuildFile; fileRef = A5A6D0222C7C748B001EA378 /* mandoo.png */; };
+		A5A6D0832C857D96001EA378 /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A6D0822C857D96001EA378 /* DateExtension.swift */; };
+		A5A6D0852C857F0A001EA378 /* HapticManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A6D0842C857F0A001EA378 /* HapticManager.swift */; };
+		A5A6D08B2C85818A001EA378 /* Pretendard-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = A5A6D0872C85818A001EA378 /* Pretendard-Medium.otf */; };
+		A5A6D08C2C85818A001EA378 /* Pretendard-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = A5A6D0882C85818A001EA378 /* Pretendard-Regular.otf */; };
+		A5A6D08D2C85818A001EA378 /* Pretendard-SemiBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = A5A6D0892C85818A001EA378 /* Pretendard-SemiBold.otf */; };
+		A5A6D08E2C85818A001EA378 /* Pretendard-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = A5A6D08A2C85818A001EA378 /* Pretendard-Bold.otf */; };
+		A5A6D0912C858281001EA378 /* FontExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A6D0902C858281001EA378 /* FontExtension.swift */; };
+		A5D215152C858DF5009E1766 /* DateSelectionSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D215142C858DF5009E1766 /* DateSelectionSheet.swift */; };
+		A5D215172C85AB5A009E1766 /* TextfieldStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D215162C85AB5A009E1766 /* TextfieldStyle.swift */; };
+		A5D215192C85B784009E1766 /* TagButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D215182C85B784009E1766 /* TagButtonStyle.swift */; };
+		A5D2151B2C86A75A009E1766 /* ToggleButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D2151A2C86A75A009E1766 /* ToggleButtonView.swift */; };
+		A5D2151D2C870AAB009E1766 /* CalendarViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D2151C2C870AAB009E1766 /* CalendarViewModel.swift */; };
 		A5D6602A2C773A6D005DA48C /* ManduAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D660292C773A6D005DA48C /* ManduAppApp.swift */; };
 		A5D6602C2C773A6D005DA48C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D6602B2C773A6D005DA48C /* ContentView.swift */; };
 		A5D6602E2C773A6E005DA48C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A5D6602D2C773A6E005DA48C /* Assets.xcassets */; };
 		A5D660312C773A6E005DA48C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A5D660302C773A6E005DA48C /* Preview Assets.xcassets */; };
 		A5D660382C781691005DA48C /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D660372C781691005DA48C /* CalendarView.swift */; };
 		A5D6603B2C7816C0005DA48C /* MDCalenderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D6603A2C7816C0005DA48C /* MDCalenderView.swift */; };
-		A5D6603F2C798F6B005DA48C /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D6603E2C798F6B005DA48C /* MainView.swift */; };
-		A5D660412C7C1398005DA48C /* BookmarkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D660402C7C1398005DA48C /* BookmarkView.swift */; };
 		A5D660432C7C13D2005DA48C /* MyPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D660422C7C13D2005DA48C /* MyPageView.swift */; };
 		A5D660452C7C13E0005DA48C /* SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D660442C7C13E0005DA48C /* SettingView.swift */; };
 		A5D660482C7C1414005DA48C /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D660472C7C1414005DA48C /* ColorExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A5A6D01F2C7C73EF001EA378 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		A5A6D0222C7C748B001EA378 /* mandoo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mandoo.png; sourceTree = "<group>"; };
+		A5A6D0822C857D96001EA378 /* DateExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtension.swift; sourceTree = "<group>"; };
+		A5A6D0842C857F0A001EA378 /* HapticManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticManager.swift; sourceTree = "<group>"; };
+		A5A6D0872C85818A001EA378 /* Pretendard-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Medium.otf"; sourceTree = "<group>"; };
+		A5A6D0882C85818A001EA378 /* Pretendard-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Regular.otf"; sourceTree = "<group>"; };
+		A5A6D0892C85818A001EA378 /* Pretendard-SemiBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-SemiBold.otf"; sourceTree = "<group>"; };
+		A5A6D08A2C85818A001EA378 /* Pretendard-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Bold.otf"; sourceTree = "<group>"; };
+		A5A6D08F2C858203001EA378 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		A5A6D0902C858281001EA378 /* FontExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontExtension.swift; sourceTree = "<group>"; };
+		A5D215142C858DF5009E1766 /* DateSelectionSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateSelectionSheet.swift; sourceTree = "<group>"; };
+		A5D215162C85AB5A009E1766 /* TextfieldStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextfieldStyle.swift; sourceTree = "<group>"; };
+		A5D215182C85B784009E1766 /* TagButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagButtonStyle.swift; sourceTree = "<group>"; };
+		A5D2151A2C86A75A009E1766 /* ToggleButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToggleButtonView.swift; sourceTree = "<group>"; };
+		A5D2151C2C870AAB009E1766 /* CalendarViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarViewModel.swift; sourceTree = "<group>"; };
 		A5D660262C773A6D005DA48C /* ManduApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ManduApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5D660292C773A6D005DA48C /* ManduAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManduAppApp.swift; sourceTree = "<group>"; };
 		A5D6602B2C773A6D005DA48C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -28,8 +55,6 @@
 		A5D660302C773A6E005DA48C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A5D660372C781691005DA48C /* CalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
 		A5D6603A2C7816C0005DA48C /* MDCalenderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MDCalenderView.swift; sourceTree = "<group>"; };
-		A5D6603E2C798F6B005DA48C /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
-		A5D660402C7C1398005DA48C /* BookmarkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarkView.swift; sourceTree = "<group>"; };
 		A5D660422C7C13D2005DA48C /* MyPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageView.swift; sourceTree = "<group>"; };
 		A5D660442C7C13E0005DA48C /* SettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingView.swift; sourceTree = "<group>"; };
 		A5D660472C7C1414005DA48C /* ColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
@@ -49,6 +74,7 @@
 		A54134CD2C7C4FB400BA1D77 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				A5D2151C2C870AAB009E1766 /* CalendarViewModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -56,6 +82,7 @@
 		A54134CE2C7C4FBB00BA1D77 /* Manager */ = {
 			isa = PBXGroup;
 			children = (
+				A5A6D0842C857F0A001EA378 /* HapticManager.swift */,
 			);
 			path = Manager;
 			sourceTree = "<group>";
@@ -63,8 +90,38 @@
 		A54134CF2C7C4FC500BA1D77 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				A5A6D0212C7C7465001EA378 /* Assets */,
+				A5A6D0862C858126001EA378 /* Font */,
 			);
 			path = Resource;
+			sourceTree = "<group>";
+		};
+		A5A6D0212C7C7465001EA378 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				A5A6D0222C7C748B001EA378 /* mandoo.png */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		A5A6D0862C858126001EA378 /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				A5A6D08A2C85818A001EA378 /* Pretendard-Bold.otf */,
+				A5A6D0872C85818A001EA378 /* Pretendard-Medium.otf */,
+				A5A6D0882C85818A001EA378 /* Pretendard-Regular.otf */,
+				A5A6D0892C85818A001EA378 /* Pretendard-SemiBold.otf */,
+			);
+			path = Font;
+			sourceTree = "<group>";
+		};
+		A5D2151E2C875404009E1766 /* MDLogView */ = {
+			isa = PBXGroup;
+			children = (
+				A5D215142C858DF5009E1766 /* DateSelectionSheet.swift */,
+				A5D2151A2C86A75A009E1766 /* ToggleButtonView.swift */,
+			);
+			path = MDLogView;
 			sourceTree = "<group>";
 		};
 		A5D6601D2C773A6D005DA48C = {
@@ -86,6 +143,7 @@
 		A5D660282C773A6D005DA48C /* ManduApp */ = {
 			isa = PBXGroup;
 			children = (
+				A5A6D08F2C858203001EA378 /* Info.plist */,
 				A54134CF2C7C4FC500BA1D77 /* Resource */,
 				A54134CE2C7C4FBB00BA1D77 /* Manager */,
 				A54134CD2C7C4FB400BA1D77 /* Model */,
@@ -110,28 +168,32 @@
 		A5D660392C78169A005DA48C /* View */ = {
 			isa = PBXGroup;
 			children = (
-				A5D6603C2C7816C6005DA48C /* CalenderView */,
-				A5D6603E2C798F6B005DA48C /* MainView.swift */,
-				A5D660402C7C1398005DA48C /* BookmarkView.swift */,
+				A5D2151E2C875404009E1766 /* MDLogView */,
+				A5D6603C2C7816C6005DA48C /* MDCalenderView */,
 				A5D660422C7C13D2005DA48C /* MyPageView.swift */,
 				A5D660442C7C13E0005DA48C /* SettingView.swift */,
+				A5A6D01F2C7C73EF001EA378 /* MainView.swift */,
+				A5D215162C85AB5A009E1766 /* TextfieldStyle.swift */,
+				A5D215182C85B784009E1766 /* TagButtonStyle.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
 		};
-		A5D6603C2C7816C6005DA48C /* CalenderView */ = {
+		A5D6603C2C7816C6005DA48C /* MDCalenderView */ = {
 			isa = PBXGroup;
 			children = (
 				A5D6603A2C7816C0005DA48C /* MDCalenderView.swift */,
 				A5D660372C781691005DA48C /* CalendarView.swift */,
 			);
-			path = CalenderView;
+			path = MDCalenderView;
 			sourceTree = "<group>";
 		};
 		A5D660492C7C141A005DA48C /* Extension */ = {
 			isa = PBXGroup;
 			children = (
 				A5D660472C7C1414005DA48C /* ColorExtension.swift */,
+				A5A6D0822C857D96001EA378 /* DateExtension.swift */,
+				A5A6D0902C858281001EA378 /* FontExtension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -194,8 +256,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A5A6D0232C7C748B001EA378 /* mandoo.png in Resources */,
 				A5D660312C773A6E005DA48C /* Preview Assets.xcassets in Resources */,
+				A5A6D08E2C85818A001EA378 /* Pretendard-Bold.otf in Resources */,
+				A5A6D08C2C85818A001EA378 /* Pretendard-Regular.otf in Resources */,
+				A5A6D08D2C85818A001EA378 /* Pretendard-SemiBold.otf in Resources */,
 				A5D6602E2C773A6E005DA48C /* Assets.xcassets in Resources */,
+				A5A6D08B2C85818A001EA378 /* Pretendard-Medium.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -207,13 +274,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				A5D660432C7C13D2005DA48C /* MyPageView.swift in Sources */,
-				A5D660412C7C1398005DA48C /* BookmarkView.swift in Sources */,
+				A5D2151B2C86A75A009E1766 /* ToggleButtonView.swift in Sources */,
+				A5A6D0832C857D96001EA378 /* DateExtension.swift in Sources */,
+				A5A6D0202C7C73EF001EA378 /* MainView.swift in Sources */,
 				A5D6602C2C773A6D005DA48C /* ContentView.swift in Sources */,
 				A5D660482C7C1414005DA48C /* ColorExtension.swift in Sources */,
+				A5A6D0912C858281001EA378 /* FontExtension.swift in Sources */,
 				A5D6603B2C7816C0005DA48C /* MDCalenderView.swift in Sources */,
+				A5D2151D2C870AAB009E1766 /* CalendarViewModel.swift in Sources */,
 				A5D6602A2C773A6D005DA48C /* ManduAppApp.swift in Sources */,
+				A5D215172C85AB5A009E1766 /* TextfieldStyle.swift in Sources */,
+				A5D215152C858DF5009E1766 /* DateSelectionSheet.swift in Sources */,
+				A5A6D0852C857F0A001EA378 /* HapticManager.swift in Sources */,
 				A5D660452C7C13E0005DA48C /* SettingView.swift in Sources */,
-				A5D6603F2C798F6B005DA48C /* MainView.swift in Sources */,
+				A5D215192C85B784009E1766 /* TagButtonStyle.swift in Sources */,
 				A5D660382C781691005DA48C /* CalendarView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -273,7 +347,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -330,7 +404,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -351,11 +425,12 @@
 				DEVELOPMENT_TEAM = HH4G2BS7C9;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ManduApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -384,11 +459,12 @@
 				DEVELOPMENT_TEAM = HH4G2BS7C9;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ManduApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
